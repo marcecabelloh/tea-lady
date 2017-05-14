@@ -1,29 +1,73 @@
+/* fondo de la página, escogí una imagen*/
 body {
-	background-color: #F5F5DC;
+	background-image: url(../imagen/foto.jpg);
 }
+
+/*id desatacada imagen que quede arriba y semitransparente*/
 #destacada {
-  top: 0;
-  border: none;
-  opacity: 0.7;
+	top: 0;
+	border: none;
+	
 }
+
+/*id cabecera para posicionar la imagen arriba y que quede fija*/
 #cabecera {
 	width: 100%; 
 	left: 0; 
 	top: 0; 
-	position: fixed;
-
+	position: fixed;	
 }
+
+/*tamaño del título*/
 h1{
 	font-size: 50px;
-}
-
-h1, p{
 	text-align: center;
+	opacity: 0.7;
+
 }
+
+/*fija los textos al centro*/
+p{
+	text-align: center;
+	color: beige;
+}
+
+/* crear un cuadro alrededor del formulario y que quede centrado*/
+form {
+	width: 25%;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	padding: 20px;
+	display: block;
+	text-align: center;
+	background-color: beige;
+}
+
+/*centrar el contenido del formulario*/
 label {
-  display: block;
-  margin: .5em 0 0 0;
-  position: center;
+	display: block;
+	margin: .5em 0 0 0;
+	position: center;
+}
+
+/*permite cambiar de tono el input cuando el usuario marca esa zona del formulario*/
+input:focus, select:focus{
+	border: 1px solid #1668C4;
 
 }
 
+/*otorgo color al botón submit*/
+button[type="submit"]{
+	background: #1668C4;
+	color: #fff;
+	border: none;
+}
+/*otorgo un color distinto gracias a hover cuando el botón es pulsado*/
+button[type="submit"]:hover{
+	background:#4A88F4;
+	cursor: pointer;
+}
+/*lo que va a imprimir abajo de la pagina sea de color beige y no negro*/
+#clientes{
+	color: beige;
+}
